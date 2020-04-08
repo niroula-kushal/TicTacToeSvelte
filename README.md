@@ -2,3 +2,5 @@
 
 
 ### TicTacToe written using svelte
+
+Demo : https://tic-tac-toe-svelte-app.netlify.com/
