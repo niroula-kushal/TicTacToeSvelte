@@ -82,6 +82,17 @@
 	padding: 10px;
   	background: rgba(200, 100, 23, .8);
   }
+  .center {
+	  text-align: center;
+  }
+  footer {
+	  background: white;
+	  padding : 10px;
+	  font-size: 1.5em;
+  }
+  footer img {
+	  height : 100px;
+  }
 </style>
 
 <div id="app">
@@ -107,3 +118,8 @@
 	</ul>
   </div>
 </div>
+<footer class="center">
+	Made with 💓
+	<br/>
+	<img src="/svelte.png" alt="Svelte" />
+</footer>

@@ -892,7 +892,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (92:4) {#if gameOver}
+    // (103:4) {#if gameOver}
     function create_if_block(ctx) {
     	let t0;
     	let t1;
@@ -914,8 +914,8 @@ var app = (function () {
     			t1 = space();
     			button = element("button");
     			button.textContent = "Play Again";
-    			attr_dev(button, "class", "svelte-1x6nqy0");
-    			add_location(button, file$2, 96, 6, 2209);
+    			attr_dev(button, "class", "svelte-q0yohu");
+    			add_location(button, file$2, 107, 6, 2363);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, t0, anchor);
@@ -951,14 +951,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(92:4) {#if gameOver}",
+    		source: "(103:4) {#if gameOver}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:6) {:else}
+    // (107:6) {:else}
     function create_else_block(ctx) {
     	let t;
 
@@ -979,14 +979,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(96:6) {:else}",
+    		source: "(107:6) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (94:6) {#if winner != null}
+    // (105:6) {#if winner != null}
     function create_if_block_1(ctx) {
     	let t0;
     	let t1;
@@ -1013,14 +1013,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(94:6) {#if winner != null}",
+    		source: "(105:6) {#if winner != null}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:2) {#each gameMoves as move}
+    // (113:2) {#each gameMoves as move}
     function create_each_block$1(ctx) {
     	let li;
     	let t0;
@@ -1044,7 +1044,7 @@ var app = (function () {
     			t4 = text(" , Col : ");
     			t5 = text(t5_value);
     			t6 = space();
-    			add_location(li, file$2, 102, 2, 2336);
+    			add_location(li, file$2, 113, 2, 2490);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -1070,7 +1070,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(102:2) {#each gameMoves as move}",
+    		source: "(113:2) {#each gameMoves as move}",
     		ctx
     	});
 
@@ -1084,11 +1084,18 @@ var app = (function () {
     	let t1;
     	let t2;
     	let t3;
-    	let br;
+    	let br0;
     	let t4;
     	let t5;
     	let div1;
     	let ul;
+    	let t6;
+    	let footer;
+    	let t7;
+    	let br1;
+    	let t8;
+    	let img;
+    	let img_src_value;
     	let current;
 
     	const gameboard = new GameBoard({
@@ -1117,7 +1124,7 @@ var app = (function () {
     			t2 = text("'s turn\n    ");
     			create_component(gameboard.$$.fragment);
     			t3 = space();
-    			br = element("br");
+    			br0 = element("br");
     			t4 = space();
     			if (if_block) if_block.c();
     			t5 = space();
@@ -1128,16 +1135,29 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(br, file$2, 90, 4, 2062);
+    			t6 = space();
+    			footer = element("footer");
+    			t7 = text("Made with 💓\n\t");
+    			br1 = element("br");
+    			t8 = space();
+    			img = element("img");
+    			add_location(br0, file$2, 101, 4, 2216);
     			attr_dev(div0, "id", "playground");
-    			attr_dev(div0, "class", "svelte-1x6nqy0");
-    			add_location(div0, file$2, 87, 2, 1952);
-    			add_location(ul, file$2, 100, 1, 2301);
+    			attr_dev(div0, "class", "svelte-q0yohu");
+    			add_location(div0, file$2, 98, 2, 2106);
+    			add_location(ul, file$2, 111, 1, 2455);
     			attr_dev(div1, "id", "history");
-    			add_location(div1, file$2, 99, 2, 2281);
+    			add_location(div1, file$2, 110, 2, 2435);
     			attr_dev(div2, "id", "app");
-    			attr_dev(div2, "class", "svelte-1x6nqy0");
-    			add_location(div2, file$2, 86, 0, 1935);
+    			attr_dev(div2, "class", "svelte-q0yohu");
+    			add_location(div2, file$2, 97, 0, 2089);
+    			add_location(br1, file$2, 122, 1, 2641);
+    			if (img.src !== (img_src_value = "/svelte.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Svelte");
+    			attr_dev(img, "class", "svelte-q0yohu");
+    			add_location(img, file$2, 123, 1, 2648);
+    			attr_dev(footer, "class", "center svelte-q0yohu");
+    			add_location(footer, file$2, 120, 0, 2602);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1150,7 +1170,7 @@ var app = (function () {
     			append_dev(div0, t2);
     			mount_component(gameboard, div0, null);
     			append_dev(div0, t3);
-    			append_dev(div0, br);
+    			append_dev(div0, br0);
     			append_dev(div0, t4);
     			if (if_block) if_block.m(div0, null);
     			append_dev(div2, t5);
@@ -1161,6 +1181,12 @@ var app = (function () {
     				each_blocks[i].m(ul, null);
     			}
 
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, footer, anchor);
+    			append_dev(footer, t7);
+    			append_dev(footer, br1);
+    			append_dev(footer, t8);
+    			append_dev(footer, img);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -1220,6 +1246,8 @@ var app = (function () {
     			destroy_component(gameboard);
     			if (if_block) if_block.d();
     			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(footer);
     		}
     	};
 
